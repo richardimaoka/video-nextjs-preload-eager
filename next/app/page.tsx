@@ -6,12 +6,38 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Image
-        src="/bird.jpg"
+        src="/images/page-1.png"
         className={styles.image}
-        width={1280}
-        height={855}
-        alt="a red bird picture from Pixabay"
+        width={560}
+        height={800}
+        alt="page 1"
         priority // For the LCP image of the page
+      />
+      <div style={{ marginTop: "20px" }}></div>
+      <Image
+        src="/images/page-2.png"
+        className={styles.image}
+        width={560}
+        height={800}
+        alt="page 1"
+        loading="eager"
+      />
+      <div style={{ marginTop: "20px" }}></div>
+      <Image
+        src="/images/page-3.png"
+        className={styles.image}
+        width={560}
+        height={800}
+        alt="page 1"
+      />
+      <div style={{ marginTop: "1500px" }}></div>
+      <Image
+        src="/images/page-4.png"
+        className={styles.image}
+        width={560}
+        height={800}
+        alt="page 1"
+        // priority // For the LCP image of the page
       />
     </main>
   );
